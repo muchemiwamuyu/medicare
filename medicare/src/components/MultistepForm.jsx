@@ -1,4 +1,5 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 
 
 // Shared card + input styles
@@ -8,6 +9,7 @@ const selectStyle = `${inputStyle} bg-white`;
 const btnPrimary = "bg-blue-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors";
 const btnSecondary = "bg-gray-200 text-gray-800 font-medium py-2 px-4 rounded-lg hover:bg-gray-300 transition-colors";
 const btnSuccess = "bg-green-600 text-white font-medium py-2 px-4 rounded-lg hover:bg-green-700 transition-colors";
+
 
 // Steps
 export function FormStep1({ next }) {
@@ -95,8 +97,10 @@ export function FormStep4({ next, back }) {
 }
 
 export function FormStep5({ back }) {
+
+    const navigate = useNavigate();
     return (
-        <form onSubmit={(e) => { e.preventDefault(); alert('Form submitted!'); }} className={formCard}>
+        <form onSubmit={(e) => { e.preventDefault(); navigate('/login'); }} className={formCard}>
             <h2 className="text-2xl font-semibold text-gray-800 text-center">Security Credentials</h2>
             <input type="text" placeholder="Username" required className={inputStyle} />
             <input type="password" placeholder="Password" required className={inputStyle} />
