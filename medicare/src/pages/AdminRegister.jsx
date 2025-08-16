@@ -10,7 +10,7 @@ export const AdminRegister = () => {
 
     // This is the main admin register page
     return (
-        <div className='bg-linear-to-r from-[#ECE9E6] to-[#FFFFFF]'>
+        <div className=''>
 
             {/* main logo */}
             <img src={mainLogo} alt="" className='w-52' />
