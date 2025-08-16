@@ -19,7 +19,7 @@ function LoginPage() {
   };
 
   return (
-    <div className="bg-[#E9E4F0] min-h-screen relative py-8 flex flex-col items-center overflow-hidden">
+    <div className=" min-h-screen relative py-8 flex flex-col items-center overflow-hidden">
       {/* Logo */}
       <img src={mainLogo} alt="Medicare Logo" className="w-48 mb-6" />
 
