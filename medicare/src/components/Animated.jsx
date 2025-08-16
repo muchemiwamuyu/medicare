@@ -20,7 +20,7 @@ export function Animated2 () {
       src="https://cdn.lordicon.com/tewlfgbl.json"
       trigger="loop"
       state="loop-queue"
-      style={{ width: "100px", height: "100px" }}>
+      style={{ width: "70px", height: "70px" }}>
     </lord-icon>
   );
 }

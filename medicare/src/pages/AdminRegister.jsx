@@ -10,7 +10,7 @@ export const AdminRegister = () => {
 
     // This is the main admin register page
     return (
-        <div className='h-screen bg-linear-to-r from-[#ECE9E6] to-[#FFFFFF]'>
+        <div className=' bg-linear-to-r from-[#ECE9E6] to-[#FFFFFF]'>
 
             {/* main logo */}
             <img src={mainLogo} alt="" className='w-52' />
@@ -28,7 +28,9 @@ export const AdminRegister = () => {
             </div>
 
             {/* admin form tracker system */}
-                <AdminContainer />
+            <section className='w-full  h-4/5 mt-24'>
+                <AdminContainer />  
+            </section>
 
         </div>
     )

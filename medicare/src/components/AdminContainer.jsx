@@ -58,14 +58,14 @@ function AdminContainer() {
 
 
   return (
-        <div className="w-full flex flex-col mt-[3%]">
+        <div className="flex flex-col mt-[3%]">
             {/* Tracker at the top */}
             <div className="w-full py-6">
                 <StepTracker currentStep={currentStep} />
             </div>
 
             {/* Forms section */}
-            <section className="w-full h-1/2 absolute bottom-0 flex items-center justify-center">
+            <section className="w-full">
                 {steps[currentStep]}
             </section>
         </div>
